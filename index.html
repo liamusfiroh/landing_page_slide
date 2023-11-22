@@ -1,0 +1,293 @@
+<!Doctype = html>
+<html>
+<head>
+<META name="viewport" content="width=device-width, 
+initial-scale=1">
+<STYLE>
+body{
+margin :0;
+font-family :Arial, Helvetica, sans-serif;}
+.navatas {
+overflow:hidden;
+background-color:#000000;}
+.navatas a{
+float:left;
+color:#f2f2f2;
+text-align:center;
+padding : 14px 50px;
+text-decoration:none;
+font-size: 20px;}
+.navatas a:hover{
+background-color:#E67E22;
+color:yellow;}
+.navatas a:active{
+background-color:#ddd;
+color:black;}
+
+.footer-bottom {
+background-image : url("footer-bg.jpg") ;
+background-size: 1920px 300px;
+color :#ffffff;
+margin-bottom:5 px;
+padding:30px;
+text-align:center;}
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.logo a{
+  text-decoration: none;
+  color: #08596A;
+  font-size: 30px;
+}
+
+</STYLE>
+</HEAD>
+<body>
+
+<DIV class="navatas">
+<div class="logo">
+          <a href="#">
+          AsiaTenggara.com
+          </a>
+        </div>
+<A href="index.html">Home</A>
+<A href="#kontak" >Kontak</A>
+<A href="#download" >Download</A>
+<A href="#tutorial" >Tutorial</A>
+</div>
+<div style="padding-left:25px">
+<style>
+	* {box-sizing:border-box}
+	body {font-family: Verdana,sans-serif;}
+	.mySlides {display:none}
+	
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 500px;
+	  position: relative;
+	  margin: auto;
+	}
+
+	/* Caption text */
+	.text {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+	
+	/* The dots/bullets/indicators */
+	.dot {
+	  height: 13px;
+	  width: 13px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active {
+	  background-color: #717171;
+	}
+	
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+	
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 300px) {
+	  .text {font-size: 11 px}
+	}
+	</style>
+	</head>
+	<body>
+	
+
+	<h1>ASIA TENGGARA</h1>
+	<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 6</div>
+	  <a href = "#kamboja">
+	 <img src="kamboja.jpg" style="width:100%"></a>
+	  <div class="text">Kamboja</div>
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 6</div>
+	  <a href = "#laos">
+	  <img src="laos.jpg" style="width:100%"></a>
+	  <div class="text">Laos</div>
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 6</div>
+	  <a href = "malaysia.html">
+	  <img src="malaysia.png" style="width:100%"></a>
+	  <div class="text">Malaysia</div>
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">4 / 6</div>
+	  <a href = "filipina.html">
+	  <img src="filipina.png" style="width:100%"></a>
+	  <div class="text">Filipina</div>
+	</div><div class="mySlides fade">
+	  <div class="numbertext">5 / 6</div>
+	  <a href = "indonesia.html">
+	  <img src="indonesia.png" style="width:100%"></a>
+	  <div class="text">Indonesia</div>
+	</div><div class="mySlides fade">
+	  <div class="numbertext">6 / 6</div>
+	   <a href = "singapura.html">
+	  <img src="singapura.jpg" style="width:100%"><a>
+	  <div class="text">Singapura</div>
+	</div>
+	
+
+	</div>
+	<br>
+	
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span>
+		<span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 	  
+	</div>
+	
+	<script>
+	var slideIndex = 0;
+	showSlides();
+	
+
+	function showSlides() {
+	    var i;
+	    var slides = document.getElementsByClassName("mySlides");
+	    var dots = document.getElementsByClassName("dot");
+	    for (i = 0; i < slides.length; i++) {
+	       slides[i].style.display = "none";  
+	    }
+	    slideIndex++;
+	    if (slideIndex> slides.length) {slideIndex = 1}    
+	    for (i = 0; i < dots.length; i++) {
+	        dots[i].className = dots[i].className.replace(" active", "");
+	    }
+	    slides[slideIndex-1].style.display = "block";  
+	    dots[slideIndex-1].className += " active";
+	    setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+	</script>
+	<div class="kamboja" style="padding-left:25px" >
+	
+	<H1 ID="kamboja">KAMBOJA</H1>
+<h2>Sejarah</h2>
+<p>Perkembangan peradaban Kamboja terjadi pada abad 1 Masehi. Selama abad ke-3,4 dan 5 Masehi, negara Funan dan Chenla bersatu untuk membangun daerah Kamboja. Negara-negara ini mempunyai hubungan dekat dengan Cina dan India. Kekuasaan dua negara ini runtuh ketika Kerajaan Khmer dibangun dan berkuasa pada abad ke-9 sampai abad ke-13.
+
+Kerajaan Khmer masih bertahan hingga abad ke-15. Ibu kota Kerajaan Khmer terletak di Angkor, sebuah daerah yang dibangun pada masa kejayaan Khmer. Angkor Wat, yang dibangun juga pada saat itu, menjadi simbol bagi kekuasaan Khmer.
+
+Pada tahun 1432, Khmer dikuasai oleh Kerajaan Thai. Dewan Kerajaan Khmer memindahkan ibu kota dari Angkor ke Lovek, di mana Kerajaan mendapat keuntungan besar karena Lovek adalah bandar pelabuhan. Pertahanan Khmer di Lovek akhirnya bisa dikuasai oleh Thai dan Vietnam, dan juga berakibat pada hilangnya sebagian besar daerah Khmer. Peristiwa ini terjadi pada tahun 1594. Selama 3 abad berikutnya, Khmer dikuasai oleh Raja-raja dari Thai dan Vietnam secara bergilir.
+
+Pada tahun 1863, Raja Norodom, yang dilantik oleh Thai, mencari perlindungan kepada Prancis. Pada tahun 1867, Raja Norodom menandatangani perjanjian dengan pihak Prancis yang isinya memberikan hak kontrol provinsi Battambang dan Siem Reap yang menjadi bagian Thai. Akhirnya, kedua daerah ini diberikan pada Kamboja pada tahun 1906 pada perjanjian perbatasan oleh Prancis dan Thai.
+
+Kamboja dijadikan daerah Protektorat oleh Prancis dari tahun 1863 sampai dengan 1953, sebagai daerah dari Koloni Indochina. Setelah penjajahan Jepang pada 1940-an, akhirnya Kamboja meraih kemerdekaannya dari Prancis pada 9 November 1953. Kamboja menjadi sebuah kerajaan konstitusional dibawah kepemimpinan Raja Norodom Sihanouk.
+
+Pada saat Perang Vietnam tahun 1960-an, Kerajaan Kamboja memilih untuk netral. Hal ini tidak dibiarkan oleh petinggi militer, yaitu Jendral Lon Nol dan Pangeran Sirik Matak yang merupakan aliansi pro-AS untuk menyingkirkan Norodom Sihanouk dari kekuasaannya. Dari Beijing, Norodom Sihanouk memutuskan untuk beraliansi dengan gerombolan Khmer Merah, yang bertujuan untuk menguasai kembali tahtanya yang direbut oleh Lon Nol. Hal inilah yang memicu perang saudara timbul di Kamboja.
+
+Khmer Merah akhirnya menguasai daerah ini pada tahun 1975, dan mengubah format Kerajaan menjadi sebuah Republik Demokratik Kamboja yang dipimpin oleh Pol Pot. Mereka dengan segera memindahkan masyarakat perkotaan ke wilayah pedesaan untuk dipekerjakan di pertanian kolektif. Pemerintah yang baru ini menginginkan hasil pertanian yang sama dengan yang terjadi pada abad 11. Mereka menolak pengobatan Barat yang berakibat rakyat Kamboja kelaparan dan tidak ada obat sama sekali di Kamboja.
+
+Pada November 1978, Vietnam menyerbu RD Kamboja untuk menghentikan genosida besar-besaran yang terjadi di Kamboja. Akhirnya, pada tahun 1989, perdamaian mulai digencarkan antara kedua pihak yang bertikai ini di Paris. PBB memberi mandat untuk mengadakan gencatan senjata antara pihak Norodom Sihanouk dan Lon Nol.
+
+Sekarang, Kamboja mulai berkembang berkat bantuan dari banyak pihak asing setelah perang, walaupun kestabilan negara ini kembali tergoncang setelah sebuah kudeta yang gagal terjadi pada tahun 1997
+</p>
+<h2>Geografi</h2>
+<p>Kamboja mempunyai area seluas 181.035 km2. Berbatasan dengan Thailand di barat dan utara, Laos di timurlaut dan Vietnam di timur dan tenggara. Kenampakan geografis yang menarik di Kamboja ialah adanya dataran lacustrine yang terbentuk akibat banjir di Tonle Sap. Gunung tertinggi di Kamboja adalah Gunung Phnom Aoral yang berketinggian sekitar 1.813 mdpl.
+
+</p></div>
+<div style ="padding-left:25px">
+<h1 id = "laos">LAOS</h1>
+<p>Laos (Lao: ລາວ, Lāo [láːw]), secara resmi Republik Demokratis Rakyat Laos (Lao: ສາທາລະນະລັດ ປະຊາທິປະໄຕ ປະຊາຊົນລາວ, romanized: Sathalanalat Paxathipatai Paxaxôn Lao), adalah sebuah negara yang terkurung daratan di Asia Tenggara, yang berbatasan dengan Myanmar dan Republik Rakyat Tiongkok di sebelah barat laut, Vietnam di timur, Kamboja di selatan, dan Thailand di sebelah barat. Dari abad ke-14 hingga abad ke-18, negara ini disebut Lan Xang atau "Negeri Seribu Gajah".[8]</p>
+<h2> Sejarah</h2>
+<p>Wilayah Laos telah dihuni manusia selama ribuan tahun. Periode pra-sejarah negara ini tidak terlalu banyak diketahui. Diperkirakan bahwa sejumlah kelompok orang yang berbeda menetap di daerah Laos sebelum abad ke-14. Pada saat itu, wilayah Laos dikendalikan oleh Kerajaan Mon dan Kekaisaran Khmer.</p>
+
+<p>Bangsa Laos modern dianggap memiliki kaitan pada Kerajaan Lan Xang yang berdiri pada pertengahan abad ke-14 dan didirikan oleh Fa Ngum. Sebelum masa tersebut, negara itu sudah dihuni oleh orang Lao, orang Mon, dan kelompok etnis lainnya. Pada abad ke-16, Buddhisme Theravada menjadi agama dominan.</p>
+
+<p>Dimulai pada pertengahan abad ke-17, Laos mengalami penurunan kondisi ekonomi dan politik. Pada akhir abad ke-18, Laos yang semakin melemah akhirnya ditaklukkan negara tetangga Thailand (Siam). Pada akhir abad ke-19, Prancis yang baru saja menaklukkan Vietnam bernegosiasi dengan Thailand untuk mendapatkan Laos. Pada awal abad ke-20, negara itu sepenuhnya berada di bawah kendali Prancis.<p>
+
+<p>Selama Perang Dunia II, Jepang menduduki Laos. Setelah perang selesai, bersama dengan Vietnam, Laos lantas menyatakan kemerdekaannya. Prancis merespon dengan mengirimkan tentara dan mengambil kendali wilayah lagi.</p>
+
+<p>Gerakan nasionalis terus memperjuangkan kemerdekaan, sehingga pada tahun 1950 Prancis menyatakan Laos mendapatkan otonomi. Pada tahun 1954, Laos akhirnya merdeka sepenuhnya sebagai negara monarki konstitusional.<p>
+
+<p>Setelah kemerdekaannya, Laos mengalami periode ketidakstabilan politik. Hal ini diperparah dengan kepentingan Amerika Serikat di wilayah itu yang membutuhkan basis untuk memerangi Vietnam. Tercatat pemerintah koalisi pertama jatuh pada tahun 1958, meskipun pemerintahan pengganti segera terbentuk, tetapi segera jatuh lagi. Laos menyatakan netralitas pada tahun 1962, saat terjadi konflik di Vietnam. Namun hal ini tidak menghentikan Amerika Serikat dan Vietnam Utara untuk membangun basis kekuatan di Laos sehingga menghancurkan sikap resmi bangsa untuk tetap netral. Meskipun Laos berusaha mempertahankan demokrasi, ketika AS menarik diri dari wilayah tersebut serta seiring kejatuhan Vietnam Selatan, negara itu diambil alih oleh faksi komunis dengan dukungan militer dari Vietnam Utara.</p>
+
+<p>Pada akhir tahun 1975, raja dipaksa turun tahta dan Communist Lao People’s Democratic Republic segera dibentuk. Pemerintahan komunis yang didukung Vietnam membuat kondisi ekonomi Laos semakin memburuk. Akhirnya, dimulai pada akhir tahun 1980-an, Laos mulai lebih membuka ekonominya dan memulai perbaikan ekonomi meskipun berjalan lambat.</p>
+
+<p>Laos adalah negara berdaulat yang memiliki banyak ranjau darat belum meledak hingga ke pedesaan. Pengunjung harus berhati-hati untuk tidak meninggalkan jalur jalan aman dan memperhatikan semua tanda peringatan ranjau darat.</p>
+
+<p>Beberapa atraksi utama Laos diantaranya adalah Khone Phapheng, air terjun terbesar di Asia Tenggara, Pha That Luang, sebuah kuil Buddha yang indah, dan gua-gua Pak Ou. Plain of Jars juga menjadi tempat yang menarik untuk dikunjungi, terutama oleh arkeolog amatir. Fitur terkenal di Plain of Jars adalah guci batu besar yang berbobot lebih dari enam ton dan berusia sekitar 2000 tahun. Selain itu, terdapat pula ratusan guci lain yang berserakan di daerah itu dengan kegunaan yang belum diketahui pasti.</p>
+<h2>Geografi</h2>
+<p>Negara Laos Secara astronomis, wilayah Laos terletak antara 14°LU – 22°LU dan antara 100°BT – 108°BT. Luas total wilayah ini mencakup 236,800 km2 dan 2% dari wilayah tersebut adalah berupa perairan.<br>
+
+Adapun secara geografis wilayah Negara Laos memiliki batas batas wilayah sebagai berikut:<br>
+
+Sebelah utara: Republik Rakyat Tiongkok<br>
+Sebelah selatan: Kamboja<br>
+Sebelah barat: Myanmar dan Thailand<br>
+Sebelah timur: Vietnam<br>
+Sedangkan secara geologis negara Laos masih termasuk dalam lempeng eurasia yang menyatukan Asia dengan Eropa.</p>
+
+<br><br>
+<div>
+<H2 id="download">Link Download Lagu Kebangsaan</H2>
+<P ><a href ="https://cdn2.canehill.info/dl?hash=sbfgsOda%2F0n2Ve5XKeR6YGowRaCn2wbv4iqESgSvX%2B1vJuZApjpsViInobwgTQCJFRdOyo9PK0ClpXfsh4jo9VqnOYKznqr4cCmpmiZxG7L%2BMhUPwwuS%2FC6yWQd8TEbc7GvXYJb5Epxw7JaLr7hHrkPn0KlFia8KDXijJ6O5DPHLRTlgDMEH1GiwQk1YU%2FeJKw3%2FjsV4YqhBBKel1F%2BEndQF1qQARMR8qaTXuKBtD1orbCB01KvsSj3Xj64CiDhx"> Lagu Kebangsaan Kamboja : Noko Reach</a></p>
+<P ><a href ="https://cdn2.canehill.info/dl?hash=Xzubq8BegfzlVl6Wuc5h7qdJAZ6YurvvVOq9ce%2B9eOio3r6CtTDZI4aSJ5YUOI%2Bj12oYbAwcvKHIUB89hUWA%2F5HETimZMags9ESa3ay78Ha3osiXdz%2Bhr7sz2s3WwvXjyGTyitJt3bQodo7lmVzPo42E1WUaaUApqhe9gQRx2go2%2FLk27E5K9UL0CLCrhH23Twbc%2FGiECbv9xZeBRwq%2Fk0tLhpEiiKgGgEtVkrJJW6AvHFB4Ab6ROwZi13IESJSE"> Lagu Kebangsaan Indonesia : Indonesia Raya </a></p>
+</div><br>
+<br>
+<div >
+<h2 id="tutorial">Tutorial</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7bqt5gYwyGA?si=tYqPgK-wzim4_fw1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TX0uYx_-N7A?si=0hCVAe3-4t1zaheg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</div><br><br>
+
+<div class="footer-bottom">
+<div id="kontak" class="social-media">
+<a href="https://www.facebook.com/smkluqmanalhakim.kudus/"><img src="facebook.png" alt="Facebook"></a>
+<a href="https://www.youtube.com/@smkluqmanalhakimkudus7189"><img src="youtube.png" alt="Youtube"></a>
+<a href="https://www.instagram.com/smkluqmanalhakim.kudus/"><img src="instagram.png" alt="Instagram"></a>
+</div>
+
+<p> Hak Cipta &copy; 2023 Asia Tenggara. Hak Cipta Dilindungi.</p>
+</div>
+</body>
+</html>
